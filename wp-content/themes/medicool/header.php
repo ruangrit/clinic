@@ -47,6 +47,29 @@
                 </div>
             <?php } ?>
             <div class="container container-nav">
+                <div>
+                    <p>Custom heading here</p>
+                    <div class="social-links">
+                        <?php
+                        $social =  bravo_get_option('footer_social');
+                        if(!empty($social)){
+                            foreach($social as $k=>$v){
+                                $class = BravoAssets::build_css('border-color:'.esc_attr($v['color']).' !important ; color:'.esc_url($v['color']).' !important ; opacity: 0.8;');
+                                $class .= " ".BravoAssets::build_css('opacity: 1;',":hover");
+                                ?>
+                                <div class="icon">
+                                    <a class="social-link-facebook <?php  echo esc_attr($class)?>" target="_blank" href="#"><i class="fa <?php  echo esc_attr($class)?> <?php echo esc_attr($v['icon']) ?>"></i></a>
+                                </div>
+                        <?php
+                            }
+                        }
+                        ?>
+
+                    </div>
+                    <div class="telephone">
+                        <a href="tel:+66877322575">0877322575</a>
+                    </div>
+                </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
