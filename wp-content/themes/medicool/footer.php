@@ -15,6 +15,7 @@ if(!empty($page_footer)){
 				</div> <!-- end content-article -->
     		</div> <!-- end content-mainn -->
 		</div> <!-- end wrapper-->
+		<!--
 		<footer id="page-footer">
 			<div class="">
 				<div class="container">
@@ -55,6 +56,7 @@ if(!empty($page_footer)){
 				</div>
 			</div>
 		</footer>
+		-->
 	<?php wp_footer();?>
 	</body>
 </html>
