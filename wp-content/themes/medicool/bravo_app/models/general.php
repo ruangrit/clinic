@@ -240,7 +240,7 @@ if (!class_exists('BravoGeneral')) {
             wp_enqueue_script('bravo_custom',BravoAssets::url('js/custom.js'),array('jquery'),null,true);
 
 
-            $gg_api_key  = bravo_get_option('bravo_google_api_key','AIzaSyA1l5FlclOzqDpkx5jSH5WBcC0XFkqmYOY');
+            $gg_api_key  = bravo_get_option('bravo_google_api_key','AIzaSyA5L3ebWRLLzVceTsS-r8VpjMB7l-sOkEg');
 
             if (is_ssl()){
                 $url=add_query_arg(array(
